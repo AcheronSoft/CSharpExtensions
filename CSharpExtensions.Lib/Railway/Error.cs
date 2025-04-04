@@ -1,7 +1,7 @@
 using CSharpExtensions.Lib.Extensions;
 using Microsoft.AspNetCore.Http;
 
-namespace CSharpExtensions.Lib.Base;
+namespace CSharpExtensions.Lib.Railway;
 
 /// <summary>
 /// Класс олицетворяющий объект ошибки
