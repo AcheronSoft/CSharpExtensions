@@ -19,7 +19,7 @@ public static class RailwayConfiguration
         ActionResultProfileSettings = settingsBuilder;
     }
 
-    public static IActionResultProfile GetProfile()
+    public static IActionResultProfile GetCurrentProfile()
     {
         return ActionResultProfileSettings.CurrentProfile;
     }
