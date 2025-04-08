@@ -42,7 +42,7 @@ dotnet add package AcheronSoft.CSharpExtensions
 - `Enums/` - Перечисления
 - `Exceptions/` - Пользовательские исключения
 - `Extensions/` - Методы расширения
-- `Infrastructure/` - Инфраструктурные компоненты
+- `Helpers/` - Полезности
 - `JsonConverters/` - Конвертеры для JSON
 - `JsonNamingPolicies/` - Политики именования для JSON
 - `Railway/` - Классы и компоненты для реализации подхода Railway
@@ -68,12 +68,8 @@ dotnet add package AcheronSoft.CSharpExtensions
 ### Extensions
 Предоставляет методы расширения для различных типов данных.
 
-### Infrastructure
-Содержит инфраструктурные компоненты, такие как:
-- Логирование
-- Кэширование
-- Конфигурация
-- Валидация
+### Helpers
+Содержит всяческие полезности )
 
 ### JsonConverters
 Содержит конвертеры для сериализации/десериализации JSON.
@@ -165,7 +161,7 @@ public async Task<ActionResult<User>> GetUserAsync(int id)
    public Result<User> CreateUser(UserDto userDto)
    {
        if (string.IsNullOrEmpty(userDto.Email))
-           return Result.Failure<User>(new Error("Email не может быть пустым"));
+           return new Error("Email не может быть пустым");
            
        // Логика создания пользователя
        return Result.Success(newUser);
