@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+		<PackageId>AcheronSoft.CSharpExtensions</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>AcheronSoft</Authors>
+		<Description>A library for error handling in functional style and realize railway programming pattern.</Description>
+        <LangVersion>13</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+</Project>
