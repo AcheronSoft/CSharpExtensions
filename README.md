@@ -24,7 +24,7 @@
 
 ## Требования
 
-- .NET 9.0 или выше
+- .NET 8.0 
 - Microsoft.AspNetCore.App
 
 ## Установка
